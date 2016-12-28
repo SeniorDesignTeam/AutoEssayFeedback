@@ -1,0 +1,69 @@
+body {
+    background-image: url("../assets/school.png");
+}
+
+input {
+    background-color: #fffdf8 !important;
+}
+
+.ui.message .list:not(.ui) li:before {
+    content: '\2022';
+}
+
+.ui.steps .step.active, .ui.steps .step.active:after {
+    background: #7f8799;
+}
+
+div.ui.three.top.attached.steps {
+    width: 700px !important;
+}
+
+.ui.steps .active.step .icon {
+    color: #d8dade;
+}
+
+#container {
+
+    position: absolute;
+    width: 700px;
+    min-height: 450px;
+    overflow: hidden;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+}
+
+.ui.steps .step.disabled {
+
+    background: #fffdf8;
+
+}
+
+.ui.steps .step.active .title {
+
+    color: #a6abb6;
+
+}
+
+.ui.steps .step.active .description {
+
+    color: #d8dade;
+
+}
+
+#register_segment {
+
+    background-color: #fffdf8;
+    width: 100%;
+    min-height: 450px;
+
+}
+
+.ui.button {
+    margin-top: 50px;
+    background-color: #7f8799 !important;
+    color: #d8dade;
+}

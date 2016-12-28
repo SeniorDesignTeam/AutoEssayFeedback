@@ -1,0 +1,23 @@
+body {
+
+    background-image: url("../assets/school.png");
+    color: #fff7e7 !important;
+}
+
+#welcome_header {
+
+    font-size: 72px !important;
+    margin-top: 50px;
+    text-align: center;
+    color: #fffdf8 !important;
+}
+
+#message_notification {
+
+    width: 600px;
+    height: auto;
+
+    position: relative;
+    left: 50%;
+    margin: 0 0 0 -300px;
+}
