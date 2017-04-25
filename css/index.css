@@ -1,15 +1,22 @@
 body {
 
-    background-image: url("../assets/school.png");
+    background-image: url("../assets/school.png") !important;
     color: #fff7e7 !important;
+
+}
+
+.pusher {
+    background-image: url("../assets/school.png") !important;
+
 }
 
 #welcome_header {
 
     font-size: 72px !important;
-    margin-top: 50px;
+    font-weight: lighter;
+    margin-top: 10px;
     text-align: center;
-    color: #fffdf8 !important;
+    color: #434f6d !important;
 }
 
 #message_notification {
@@ -20,4 +27,45 @@ body {
     position: relative;
     left: 50%;
     margin: 0 0 0 -300px;
+}
+
+.ui.sidebar.menu {
+    background-color: #a6abb6 !important;
+    border: 0px;
+}
+
+#nav {
+    background-color: #a6abb6 !important;
+    border: 0px;
+    /*position: fixed;*/
+
+}
+
+#nav .item {
+    color: #fffdf8 !important;
+}
+
+div.ui.special.cards {
+    width: 800px;
+    margin: 0 auto;
+}
+
+div.ui.special.cards > div.card{
+    width: 350px;
+    max-height: 250px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #a6abb6;
+}
+
+div.card > div.image {
+    /*margin: 0 auto;*/
+    width: 348;
+    height:150px;
+    overflow: hidden;
+}
+
+div.card > div.content > div.header {
+    font-size: 32px !important;
+    font-weight: lighter !important;
 }

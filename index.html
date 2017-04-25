@@ -11,21 +11,140 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
+        <script src="./js/index.js"></script>
         <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script> -->
 
     </head>
 
     <body>
-        <h1 class="ui header" id="welcome_header">Welcome, User.</h1>
-        <div class="ui icon message" id="message_notification">
-            <i class="inbox icon"></i>
-            <div class="content">
-                <i class="close icon"></i>
-                <div class="header">
-                    You have one new notification from DISC 1313!
+        <div class="ui top attached demo menu" id="nav">
+            <a class="item">
+                <i class="sidebar icon"></i>
+                Menu
+            </a>
+        </div>
+        <div class="ui bottom attached segment pushable">
+            <div class="ui inverted labeled icon left inline vertical sidebar menu" style="">
+                <a class="item">
+                    <i class="circular home icon"></i>
+                    Home
+                </a>
+                <a class="item">
+                    <i class="circular block layout icon"></i>
+                    My Classes
+                </a>
+                <a class="item" href="profile.html">
+                    <i class="circular smile icon"></i>
+                    My Profile
+                </a>
+                <a class="item">
+                    <i class="circular calendar icon"></i>
+                    History
+                </a>
+            </div>
+            <div class="pusher">
+                <h1 class="ui header" id="welcome_header">Welcome, Ashley.</h1>
+
+                <div class="ui special cards">
+                    <div class="card" style="border-color: #ff4d4d">
+                        <div class="blurring dimmable image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <div class="ui inverted button">View Class</div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!-- <div class="image"> -->
+                            <img src="./assets/apple.jpg">
+                        </div>
+                        <div class="content">
+                            <div class="header">DISC 1313</div>
+                            <div class="meta">Professor: Andrea Hamilton</div>
+                            <div class="description">
+                                History of the American Public School System
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="border-color: #9affcc">
+                        <div class="blurring dimmable image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <div class="ui inverted button">View Class</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./assets/kente.jpg">
+
+                        </div>
+                        <!-- <div class="image">
+                        </div> -->
+                        <div class="content">
+                            <div class="header">HIST 3301</div>
+                            <div class="meta">Professor: Kenneth Hamilton</div>
+                            <div class="description">
+                                History of African Americans from the 1600s.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card"  style="border-color: #cc9aff">
+                        <div class="blurring dimmable image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <div class="ui inverted button">View Class</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./assets/star_of_david.png">
+
+                        <!-- </div>
+                        <div class="image"> -->
+                        </div>
+                        <div class="content">
+                            <div class="header">JWST 2306</div>
+                            <div class="meta">Professor: Unknown</div>
+                            <div class="description">
+                                Introduction to Jewish Literature
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card" style="border-color: #9acdff">
+                        <div class="blurring dimmable image">
+                            <div class="ui dimmer">
+                                <div class="content">
+                                    <div class="center">
+                                        <div class="ui inverted button">View Class</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="./assets/blueprint.jpg">
+                        </div>
+                        <!-- <div class="image">
+                        </div> -->
+                        <div class="content">
+                            <div class="header">CEE 3302</div>
+                            <div class="meta">Professor: John Easton</div>
+                            <div class="description">
+                                Engineering Communications
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <p>Click this message for more information.</p>
+                <!-- <div class="ui icon message" id="message_notification">
+                    <i class="inbox icon"></i>
+                    <div class="content">
+                        <i class="close icon"></i>
+                        <div class="header">
+                            You have one new notification from DISC 1313!
+                        </div>
+                        <p>Click this message for more information.</p>
+                    </div>
+                </div> -->
             </div>
         </div>
     </body>
+
 </html>

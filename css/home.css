@@ -1,0 +1,87 @@
+@font-face {
+    font-family: AvenirNext;
+    src: url(../assets/fonts/avenir/AvenirNextLTPro-Regular.otf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: AvenirNextIt;
+    src: url(../assets/fonts/avenir/AvenirNextLTPro-It.otf);
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: GlacialIndifference;
+    src: url(../assets/fonts/glacial-indifference/GlacialIndifference-Regular.otf);
+    font-weight: 100;
+}
+
+body {
+    font-family: AvenirNext, sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+    color: #499BC9;
+    text-align: left;
+}
+
+.instruction_section {
+    margin: 30px;
+    text-align: center;
+}
+
+textarea {
+    border: 0.1px solid;
+    width: 100%;
+    height: 70vh;
+}
+
+.ui.input > input {
+    font-family: AvenirNext, sans-serif !important;
+
+}
+
+.essay {
+    padding: 40px;
+}
+
+.response_section {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.response_section p {
+    font-family: AvenirNextIt, sans-serif !important;
+    font-size: 24px;
+    padding: 30px;
+}
+
+h3 {
+    font-family: AvenirNext, sans-serif !important;
+    font-weight: lighter;
+    font-size: 36px;
+    color: #499BC9;
+}
+
+h2 {
+    font-family: AvenirNext, sans-serif !important;
+    font-weight: lighter;
+}
+
+#logo {
+    /*margin: 30px;*/
+    width: 270px;
+    height: 52px;
+    margin: 45px auto;
+}
+
+#back {
+    color: #499BC9;
+    box-shadow: 0 0 0 2px #499BC9 inset !important;
+}
+
+#back:hover {
+    background-color: #499BC9;
+    color: #FFFFFF;
+}

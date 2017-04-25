@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Auto-Essay Feedback</title>
+
+        <link rel = "stylesheet" href = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link rel = "stylesheet" href = "http://openlayers.org/en/v3.16.0/css/ol.css" type="text/css" />
+        <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.css" type="text/css" />
+        <link rel = "stylesheet" href = "./css/home.css" type = "text/css" />
+
+        <link href = "https://fonts.googleapis.com/css?family=Lato:100|Open+Sans:300|Source+Sans+Pro:200,300,400,600,700" rel="stylesheet">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+        <script src = "http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.8/semantic.min.js"></script>
+        <script src = "js/home.js"></script>
+        <script src="https://unpkg.com/nlp_compromise@latest/builds/nlp_compromise.min.js"></script>
+        <script src="js/require.js" data-main="js/home"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script> -->
+
+    </head>
+
+    <body>
+        <div class = "ui grid">
+            <div class = "five wide column">
+
+                <div class = "ui inverted dimmer" id = "loader">
+                    <div class="ui text loader">Loading</div>
+                </div>
+                <!-- <h1>AEFeedback</h1> -->
+                <!-- <div class="ui centered medium image"> -->
+                    <img id = "logo" class = "ui centered huge image" src="./assets/img/HORIZONS.png">
+                <!-- </div> -->
+                <div class = "instruction_section">
+                    <h2>Welcome to the Clarity app.</h1>
+                    <!-- <br>
+                    <br> -->
+                    <!-- <p>Welcome to the AutoEssayFeedback App!</p>
+                    <p>Our app aims to help bring clarity to your writing by helping you to be sure that you're really saying what you mean in the best way possible.</p>
+                    <p>To use this application, start writing in the text box in the right panel and when you've finished, click 'Scan'.</p>
+                    <p>Once the scan is complete, you can click on individual sentences to evaluate them. When the sentence is clicked it will appear here, along with a suggested alternative sentence. If the alternative sentence conveys the meaning that you intended, click the check mark. If not, click the 'X' mark.</p>
+                    <p>If you click the 'X' mark, another alternative sentence will be generated, along with suggestions on which words you could use instead to make your sentence align with your intended meaning.</p> -->
+                    <p>To show this how-to manual again click the information button located at the bottom of this panel.</p>
+                </div>
+                <div class = "hidden response_section">
+                    <p class = "selected_sentence"></p>
+                    <h3>Did you mean..</h3>
+                    <p class = "suggestion"></p>
+                    <div class = "button_group">
+                        <button class = "ui circular green icon huge inverted button">
+                            <i class="icon checkmark"></i>
+                        </button>
+                        <button class = "ui circular red icon huge inverted button">
+                            <i class = "icon remove"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div class = "ui vertical divider">
+            </div>
+            <div class = "eleven wide column">
+                <div class = "essay">
+                    <h1 contenteditable="true">Title Goes Here</h1>
+                    <div class = "ui divider"></div>
+                    <textarea id = "essay_text" placeholder = "Write stuff here!"></textarea>
+                    <!-- <div class="ui left icon input">
+                        <input type="text" placeholder="Write Stuff Here!">
+                        <i class="write icon"></i>
+                    </div> -->
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat sed neque nec congue. Morbi vel diam ornare, vulputate metus in, maximus justo. Vivamus pharetra diam ut lorem ultricies, sit amet rutrum est consequat. Sed urna sem, venenatis id laoreet id, luctus iaculis justo. Donec id fringilla dolor, ut ornare ex. Aenean sit amet lectus id nulla sodales varius quis non purus. Suspendisse tempor vitae massa eget elementum. Proin ac euismod risus. Ut molestie nibh scelerisque nisl rutrum malesuada. Nulla faucibus eu ante et accumsan.</p> -->
+                    <button class = "ui fluid basic button" id = "scan">Scan</button>
+                    <p class = "hidden" id = "stopwords"></p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

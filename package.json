@@ -1,0 +1,25 @@
+{
+  "name": "auto-essay-feedback",
+  "version": "1.0.0",
+  "description": "Our Senior Design Project",
+  "main": "home.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeniorDesignTeam/AutoEssayFeedback.git"
+  },
+  "author": "Ashley Isles",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeniorDesignTeam/AutoEssayFeedback/issues"
+  },
+  "homepage": "https://github.com/SeniorDesignTeam/AutoEssayFeedback#readme",
+  "dependencies": {
+    "compromise": "^8.1.0"
+  },
+  "devDependencies": {
+    "compromise": "^8.1.0"
+  }
+}
